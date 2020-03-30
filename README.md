@@ -1,2 +1,2 @@
-# Ola_Mundo
- teste de novo kkk
+# Olá, Mundo!
+ Repositório de teste usado na aula do Guanabas.
