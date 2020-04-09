@@ -1,5 +1,2 @@
 # Olá, Mundo!
- Repositório de teste usado na aula do Guanabas.
- 
- 
-quarentena tá braba.
+ Repositório utilizado pra colocar todas as coisas que faço.
