@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+    background-color:  #2bd3e9;
+    font-family: 'Trebuchet MS';
+}
+
+img{
+    width: auto;
+    height: 146px;
+}
+
+h1{
+    border: 4px outset;
+    border-color: #209bac;
+}

@@ -1,0 +1,19 @@
+p{
+    font-size: 30px;
+    line-height: 400px;
+    letter-spacing: 1px;  
+    text-shadow: 2px 3px 1px red;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+   width: 600px;
+   vertical-align: middle;
+   margin: 20px auto;
+   /* background-image: url(https://image.freepik.com/vetores-gratis/mapa-de-ruas-com-pinos-e-rotas_23-2147622544.jpg); */
+   padding: 20px 20px 20px 20px;
+}
+.center {
+    margin: auto;
+    width: 100%;
+  }
+  
