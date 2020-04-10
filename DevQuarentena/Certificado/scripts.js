@@ -10,7 +10,7 @@ function gerar(){
     while (i < 1000000){
         i += 1;
         certificadoH = emitirCertificado(inputNome.value);
-    }
+    }// Libera uma condição do certificado
 
     listaL = [
         "https://codepen.io/plaisteixo-5/pen/dyoLZBo",
@@ -19,7 +19,7 @@ function gerar(){
     titulos = [
         "Sorteio",
         "One Piece"
-    ]
+    ]//listaL e titulos são variáveis vetoriais que comportam todos os nomes e links que quiser colocar
 
     cont = 0;
 
@@ -27,11 +27,11 @@ function gerar(){
         listaLink = listaLink + `<li>${titulos[cont]}: <a target="_blank" href="${listaL[cont]}">${listaL[cont].replace("https://","")}</a></li>`;
     
         cont++;
-    };
+    };// esse while serve para organizar a listaLink com todos os nomes e links
     
     document.body.innerHTML = `${certificadoH}
     <ol>
         ${listaLink}
     </ol>
-    `;
+    `;//Esse trecho printa as coisas na tela
 };
