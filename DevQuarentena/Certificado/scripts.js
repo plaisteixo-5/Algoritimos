@@ -24,7 +24,11 @@ function gerar(){
     cont = 0;
 
     while(cont < 2){
-        listaLink = listaLink + `<li>${titulos[cont]}: <a target="_blank" href="${listaL[cont]}">${listaL[cont].replace("https://","")}</a></li>`;
+        listaLink = listaLink + `
+        <li>
+            <a target="_blank" href="${listaL[cont]}">${titulos[cont]}
+            </a>
+        </li>`;
     
         cont++;
     };// esse while serve para organizar a listaLink com todos os nomes e links
