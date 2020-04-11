@@ -37,20 +37,20 @@ var myHeading = document.querySelector('h1');
 if(!localStorage.getItem('name')){
     setUserName();
 }
-else{
-    var storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla is cool, ' + storedName;
-}
+// else{
+//     var storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'Mozilla is cool, ' + storedName;
+// }
 
-function setUserName(){
-    var myName = prompt('Digite seu nome: ');
-    localStorage.setItem('name',myName);
-    myHeading.textContent = 'Mozilla is cool, '+myName;
-}
+// function setUserName(){
+//     var myName = prompt('Digite seu nome: ');
+//     localStorage.setItem('name',myName);
+//     myHeading.textContent = 'Mozilla is cool, '+myName;
+// }
 
-myButton.onclick = function(){
-    setUserName();
-}
+// myButton.onclick = function(){
+//     setUserName();
+// }
 
 
 // document.querySelector('img').onclick = function(){

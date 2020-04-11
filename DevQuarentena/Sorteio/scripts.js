@@ -12,9 +12,9 @@ function Sort(){
         alert(`O número digitado é inválido. Aperte enter e tente novamente: `)
         Sort();
     } else{
-        paragrafoResultado.innerHTML = `<br>Não foi dessa vez :(</br>
+        paragrafoResultado.innerHTML = `<p>Não foi dessa vez :(</br>
                                         <br>Você digitou ${nUsuario}</br>
-                                        <br>O número certo é ${aleatorio}</br>`;
+                                        <br>O número certo é ${aleatorio}</br></p>`;
         paragrafoResultado.style.fontColor = "Yellow";
     }
 };

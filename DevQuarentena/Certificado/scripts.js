@@ -14,16 +14,20 @@ function gerar(){
 
     listaL = [
         "https://codepen.io/plaisteixo-5/pen/dyoLZBo",
-        "https://onepieceex.net/"
+        "https://codepen.io/plaisteixo-5/pen/jOPjNqJ",
+        "https://codepen.io/plaisteixo-5/pen/MWwROBX",
+        "https://codepen.io/plaisteixo-5/pen/VwvYVNz"
     ];
     titulos = [
         "Sorteio",
-        "One Piece"
+        "Curriculo",
+        "Calculadora de Corrida",
+        "Botão de Like"
     ]//listaL e titulos são variáveis vetoriais que comportam todos os nomes e links que quiser colocar
 
     cont = 0;
 
-    while(cont < 2){
+    while(cont < 4){
         listaLink = listaLink + `
         <li>
             <a target="_blank" href="${listaL[cont]}">${titulos[cont]}
