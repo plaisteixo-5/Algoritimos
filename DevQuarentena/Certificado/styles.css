@@ -157,4 +157,8 @@
         font-size: 3.5vw;
     }
   }
+
+  h1:after {
+    content: "" !important;
+  }
   

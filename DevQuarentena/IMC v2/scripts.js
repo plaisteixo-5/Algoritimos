@@ -14,7 +14,8 @@ function calcular(){
         pCalcular.innerHTML = 'Você está com obesidade I, pois seu IMC é de '+printaBagui(IMC);
     } else if(IMC >= 35){
         pCalcular.innerHTML = 'Você está com obesidade, pois seu IMC é de '+printaBagui(IMC);
-    }
+    };
+    pCalcular.style.font.size = "small";
     
 };
 

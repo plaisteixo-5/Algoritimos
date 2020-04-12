@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="inputP">Peso: </label>
-    <input type="number" id="inputP">
-    <br>
-    <label for="inputA">Altura (cm): </label>
-    <input type="number" id="inputA">
+    <h1>Calculadora de IMC</h1>
+    <label for="inputP">Peso (Kg): </label><br>
+    <input type="text" id="inputP"><br>    
+    <label for="inputA">Altura (cm): </label><br>
+    <input type="text" id="inputA">
     <br>
 
-    <button onclick="calcular()">Calcular</button>
+    <button class="classname" onclick="calcular()">Calcular</button>
     <p id="pCalcular"></p>
     <script src="scripts.js"></script>
 </body>
