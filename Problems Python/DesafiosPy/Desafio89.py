@@ -32,4 +32,4 @@ while True:
     i = int(input('Deseja ver as notas de algum aluno?(999 caso não): '))
     if i == 999:
         break
-    print(f'As notas de {alunos[i][0]} foram {alunos[i][1]} e {alunos[i][0]}')
+    print(f'As notas de {alunos[i][0]} foram {alunos[i][1]} e {alunos[i][2]}')
