@@ -22,10 +22,10 @@ while c not in 'Nn':
     c = str(input("Adicionar mais um aluno?[S/N] "))
 
 print('-='*30)
-print(f'{"Num.":<4}{"Nome":<10}{"Média":>8}')
+print(f'{"Num.":<6}{"Nome":<10}{"Média":>8}')
 print('-'*30)
 for i,a in enumerate(alunos):
-    print(f'{i:<4}{a[0]:<10}{a[3]:>8.1f}')
+    print(f'{i:<6}{a[0]:<10}{a[3]:>7.1f}')
 
 while True:
     print('-'*30)
