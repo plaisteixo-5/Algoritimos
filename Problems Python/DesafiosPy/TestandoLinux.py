@@ -1,1 +1,0 @@
-print('Só um teste pro linux')
