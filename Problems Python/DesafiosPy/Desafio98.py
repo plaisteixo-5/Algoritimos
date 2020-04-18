@@ -7,14 +7,14 @@ def apresenta():
     printaLinha()
     print('Contagem de 1 até 10 de 1 em 1: ')
     for c in range(1,11):
-        print(c, end=' ')
-    sleep(0.4)
+        sleep(0.4) 
+        print(c, end=' ',flush=True)
     print()
     printaLinha()
     print('Contagem de 10 até 0 de 2 em 2: ')
     for c in range(10,-1,-2):
-        print(c)
-        sleep(0.4)
+        sleep(0.4) 
+        print(c, end=' ',flush=True)
     print()
     printaLinha()
 
@@ -25,14 +25,14 @@ def contador(i,f,p):
         elif p == 0:
             p = -1
         for c in range(i,f-1,p):
-            print(c)
             sleep(0.4)    
+            print(c, end=' ',flush=True)
     else:
         if p == 0:
             p = 1
         for c in range(i,f+1,p):
-            print(c)
             sleep(0.4)
+            print(c, end=' ',flush=True)
 
 apresenta()
 
