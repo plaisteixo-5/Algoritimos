@@ -12,11 +12,11 @@ def frescura():
 
 def voto(ano):
     r = datetime.now().year - ano
-    if r >= 18:
+    if r >= 18 and r <= 60:
       return ('É obrigatorio votar!')  
     elif r < 16:
         return ('Não pode votar!')
-    else:
+    elif r >= 16 and r < 18 or r >= 60:
         return('Seu voto é opcional!')
 
 ano = int(input('Em qual ano você nasceu? '))
