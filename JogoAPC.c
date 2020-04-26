@@ -88,7 +88,8 @@ Ranked Y[10];
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 int largura = 16,altura = 9 , S = 1 , pontuacao , conectaP, tempoM , Flag_LR = 0, Flag_UR = 0 , ModoRank = 0;
 int contJogador = 0;
-char Tabuleiro[9][16],TabAux[9][16], peca = 'A' , nomeArq[40] , nomeJogador[11];
+char Tabuleiro[9][16],TabAux[9][16], peca = 'A', nomeJogador[11];
+char nomeArq[40];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Cabecalho de funcoes para evitar erros e warnings                                                                //
@@ -274,7 +275,6 @@ int verificaAdjacentes(int contador, char peca, int px, int py , int Linha[] , i
 void explode(int linhaExplosao, int colunaExplosao , char peca){
     printaPrincipalNoAux();
 
-    configuracoes X;
     int contador = 0;
     int Linha[100];
     int Coluna[100];
@@ -313,7 +313,7 @@ void MontaMira(double CoeficienteAngular){
 
     for(i = 1 ; i < 8 ; i++) {//monta a mira
         y = CoeficienteAngular*i+0;
-        int k = (int) y;
+        k = (int) y;
         if((Tabuleiro[i][k+j] == ' ') && (Tabuleiro[i][k+j] != '#') && (i != 1) && (i != 0) && (i != 8) && (k+j<largura) && (k+j>0)){
             Tabuleiro[i][k+j] = '-';
         }
@@ -336,9 +336,10 @@ int letrasAleatorias(){
 void printaTabuleiro(){
     int i,j;
     char peca = letrasAleatorias();
+    
     for(i = 8 ; i >= 0; i--){
         for(j = 0 ; j < 16 ; j++){
-            /*if(Tabuleiro[i][j] == 'A'){
+            if(Tabuleiro[i][j] == 'A'){
                 printf(RED"A"RESET);
             }
             else if(Tabuleiro[i][j] == 'B'){
@@ -356,13 +357,14 @@ void printaTabuleiro(){
             else if(Tabuleiro[i][j] == '*'){
                 printf(YELLOW"*"RESET);
             }
-            else*/
+            else
             printf("%c",Tabuleiro[i][j]);
         }
         printf("\n");
     }
+
     printf("\n");
-    // printf(RED"Pontuacao:"RESET"%d\n",pontuacao);
+    printf(RED"Pontuacao:"RESET"%d\n",pontuacao);
     printf("Pontuacao:%d\n",pontuacao);
 }
 
@@ -408,7 +410,7 @@ void montaTabuleiro(){
                 TabAux[i][j] = '#';
             }
            else if(j==7){//else para verificar se é o meio do tabuleiro
-                if(i !=0 && i != 8 || (i != 1 && j != 8)){//a linha não pode ser igual a primeira ou a ultima
+                if((i !=0 && i != 8) || (i != 1 && j != 8)){//a linha não pode ser igual a primeira ou a ultima
                     Tabuleiro[i][j]='-';
                     TabAux[i][j]='-';
                 }
