@@ -1,3 +1,2 @@
 # Olá, Mundo!
- Repositório utilizado pra colocar todas as coisas que faço.
- Ou não
+ Repositório utilizado pra colocar todos os codes que faço.
