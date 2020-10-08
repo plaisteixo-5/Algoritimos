@@ -17,6 +17,7 @@ int main(){
         p = (a+b+c)/2;
         S = sqrt(p*(p-a)*(p-b)*(p-c));
         printf("%.3lf\n",S);
+        printf("Eu esqueci como usa git no terminal socorro");
     }   
 
     return 0;
